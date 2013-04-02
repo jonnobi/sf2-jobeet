@@ -37,11 +37,11 @@ class Category
         $this->jobs = new \Doctrine\Common\Collections\ArrayCollection();
         $this->category_affiliates = new \Doctrine\Common\Collections\ArrayCollection();
     }
-    
+
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -57,14 +57,14 @@ class Category
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -80,7 +80,7 @@ class Category
     public function addJob(\Ens\JobeetBundle\Entity\Job $jobs)
     {
         $this->jobs[] = $jobs;
-    
+
         return $this;
     }
 
@@ -97,7 +97,7 @@ class Category
     /**
      * Get jobs
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getJobs()
     {
@@ -113,7 +113,7 @@ class Category
     public function addCategoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $categoryAffiliates)
     {
         $this->category_affiliates[] = $categoryAffiliates;
-    
+
         return $this;
     }
 
@@ -130,10 +130,15 @@ class Category
     /**
      * Get category_affiliates
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getCategoryAffiliates()
     {
         return $this->category_affiliates;
+    }
+
+    public function __toString()
+    {
+        return $this->getName();
     }
 }

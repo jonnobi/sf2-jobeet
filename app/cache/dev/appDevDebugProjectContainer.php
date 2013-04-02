@@ -266,11 +266,11 @@ class appDevDebugProjectContainer extends Container
      * This service is shared.
      * This method always returns the same instance of the service.
      *
-     * @return EntityManager515ab1a7e0ada_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager515ab1a7e0ada_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
+     * @return EntityManager515ab773a7c0a_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager515ab773a7c0a_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
      */
     protected function getDoctrine_Orm_DefaultEntityManagerService()
     {
-        require_once 'C:/xampp/htdocs/sf2-jobeet/app/cache/dev/jms_diextra/doctrine/EntityManager_515ab1a7e0ada.php';
+        require_once 'C:/xampp/htdocs/sf2-jobeet/app/cache/dev/jms_diextra/doctrine/EntityManager_515ab773a7c0a.php';
 
         $a = new \Doctrine\Common\Cache\ArrayCache();
         $a->setNamespace('sf2orm_default_db9732686a4a298377267d3bba7e3669');
@@ -303,7 +303,7 @@ class appDevDebugProjectContainer extends Container
         $g = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $f);
         $this->get('doctrine.orm.default_manager_configurator')->configure($g);
 
-        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager515ab1a7e0ada_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($g, $this);
+        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager515ab773a7c0a_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($g, $this);
     }
 
     /**
@@ -2584,7 +2584,7 @@ class appDevDebugProjectContainer extends Container
     /**
      * Gets the doctrine.orm.entity_manager service alias.
      *
-     * @return EntityManager515ab1a7e0ada_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
+     * @return EntityManager515ab773a7c0a_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
      */
     protected function getDoctrine_Orm_EntityManagerService()
     {
@@ -2929,7 +2929,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => 'C:/xampp/htdocs/sf2-jobeet/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'app',
+            'kernel.name' => 'ap_',
             'kernel.cache_dir' => 'C:/xampp/htdocs/sf2-jobeet/app/cache/dev',
             'kernel.logs_dir' => 'C:/xampp/htdocs/sf2-jobeet/app/logs',
             'kernel.bundles' => array(
@@ -2940,6 +2940,7 @@ class appDevDebugProjectContainer extends Container
                 'SwiftmailerBundle' => 'Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle',
                 'AsseticBundle' => 'Symfony\\Bundle\\AsseticBundle\\AsseticBundle',
                 'DoctrineBundle' => 'Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle',
+                'DoctrineFixturesBundle' => 'Doctrine\\Bundle\\FixturesBundle\\DoctrineFixturesBundle',
                 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle',
                 'JMSAopBundle' => 'JMS\\AopBundle\\JMSAopBundle',
                 'JMSDiExtraBundle' => 'JMS\\DiExtraBundle\\JMSDiExtraBundle',
@@ -3311,7 +3312,7 @@ class appDevDebugProjectContainer extends Container
             'assetic.variables' => array(
 
             ),
-            'assetic.java.bin' => 'c:\\Windows\\system32\\java.EXE',
+            'assetic.java.bin' => 'C:\\Windows\\system32\\java.EXE',
             'assetic.node.bin' => '/usr/bin/node',
             'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
@@ -3411,8 +3412,8 @@ class appDevDebugProjectContainer extends Container
             ),
             'jms_di_extra.cache_dir' => 'C:/xampp/htdocs/sf2-jobeet/app/cache/dev/jms_diextra',
             'jms_di_extra.doctrine_integration' => true,
-            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/xampp/htdocs/sf2-jobeet/app/cache/dev/jms_diextra/doctrine/EntityManager_515ab1a7e0ada.php',
-            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager515ab1a7e0ada_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
+            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/xampp/htdocs/sf2-jobeet/app/cache/dev/jms_diextra/doctrine/EntityManager_515ab773a7c0a.php',
+            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager515ab773a7c0a_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
             'security.secured_services' => array(
 
             ),
