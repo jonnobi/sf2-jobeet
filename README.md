@@ -176,5 +176,7 @@ Enjoy!
 [15]: http://symfony.com/doc/2.1/bundles/SensioGeneratorBundle/index.html
 
 
+http://localhost/sf2-jobeet/web/app_dev.php/job/
+
 テストデータ投入コマンド
 php app/console doctrine:fixtures:load
